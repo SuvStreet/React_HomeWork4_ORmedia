@@ -1,0 +1,37 @@
+.wrapperTask
+    width: 550px
+    margin: 0 auto
+    .item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 5px
+        border: 2px solid blue
+        border-radius: 8px
+        margin: 5px 0
+        .task-text
+            cursor: pointer 
+            font-size: 20px
+        .text_is_done
+            text-decoration: line-through
+        .text_is_important
+            font-weight: 700
+            color: blue
+        .wrapperRemoveFavorites
+            button
+                border: 0
+                margin: 0 5px
+                background-color: transparent
+                position: relative
+                right: 2px
+                i
+                    font-size: 18px
+                    cursor: pointer
+                    transition: 0.6s
+                    padding: 5px
+                    border-radius: 5px
+                    &:hover
+                        background-color: blue
+                        color: white
+                        //color: blue
+                        transition: 0.6s
