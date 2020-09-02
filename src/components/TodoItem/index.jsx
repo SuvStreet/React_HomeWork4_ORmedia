@@ -36,6 +36,10 @@ class TodoItem extends React.Component {
         }); */
         this.props.onToggleImportant();
     }
+
+    onFilterImportant() {
+        this.props.onFilterImportant();
+    }
     
     render() {
         const { message, done, important } = this.props;

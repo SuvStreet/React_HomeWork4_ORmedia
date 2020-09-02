@@ -2,10 +2,11 @@ import React from "react";
 
 import TodoItem from "../TodoItem";
 
-const TodoList = ({ todos, onDelete, onToggleDone, onToggleImportant }) => {
+const TodoList = ({ todos, onDelete, onToggleDone, onToggleImportant, onFilterImportant }) => {
     const elements = todos.map((item) => {
         const { id, ...itemProps } = item;
         return (
+            
             <TodoItem
                 {...itemProps}
                 key={id}
